@@ -2,6 +2,9 @@
   "name": "discord-musicbot",
   "version": "5.0.0-beta",
   "description": "Very simple discord music bot with the discord.js with Song Name playing. It can able to play music with the song name",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index",
