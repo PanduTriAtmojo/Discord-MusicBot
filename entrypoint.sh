@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start Lavalink in the background
-java -jar /opt/Lavalink/Lavalink.jar &
+java -jar Lavalink.jar &
 
 # Wait for Lavalink to start
 sleep 20
