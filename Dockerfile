@@ -23,10 +23,7 @@ RUN npm install
 RUN npm run deploy
 
 # Download dan setup Lavalink
-RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.7.12/Lavalink.jar -O /opt/Lavalink/Lavalink.jar
-
-# Copy file konfigurasi Lavalink
-COPY ./docker/application.yml /opt/Lavalink/application.yml
+RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.7.12/Lavalink.jar
 
 # Set environment variable untuk Lavalink
 ENV JAVA_TOOL_OPTIONS -Xmx1G
