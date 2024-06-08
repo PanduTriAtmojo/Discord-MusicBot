@@ -1,5 +1,5 @@
 # Menggunakan base image node dan alpine
-FROM node:17.9.1-alpine
+FROM node:lts-buster
 
 # Install dependencies untuk Lavalink
 RUN apk add --no-cache openjdk17-jdk wget
