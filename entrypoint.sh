@@ -7,7 +7,7 @@ java -jar /opt/Lavalink.jar &
 sleep 10
 
 # Check if Lavalink port is open
-if netstat -tuln | grep 8080; then
+if netstat -tuln | grep 2333; then
   echo "Lavalink is running on port 2333"
 else
   echo "Lavalink is not running"
