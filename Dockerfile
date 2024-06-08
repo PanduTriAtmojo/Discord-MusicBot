@@ -2,7 +2,7 @@
 FROM node:17.9.1-alpine
 
 # Install dependencies untuk Lavalink
-RUN apk add --no-cache openjdk11-jre wget
+RUN apk add --no-cache openjdk17-jdk wget
 
 # Set working directory
 WORKDIR /usr/src/app
