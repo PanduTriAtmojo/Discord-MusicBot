@@ -1,5 +1,6 @@
-import pm2 from 'pm2'
-import os from 'os'
+const pm2 = require("pm2")
+const os = require("os")
+
 
 const appName = 'index.js'
 
