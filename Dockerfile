@@ -1,5 +1,5 @@
-# Menggunakan base image node dan buster
-FROM node:lts-buster
+# Menggunakan base image node dan bullseye
+FROM node:18-bullseye
 
 # Install dependencies untuk Lavalink
 RUN apt-get update && \
