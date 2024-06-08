@@ -17,7 +17,7 @@ COPY . .
 COPY config.js ./config.js
 
 # Install dependencies aplikasi Node.js
-RUN npm install
+RUN npm install && npm i -g pm2
 
 # Jalankan build aplikasi (jika ada)
 RUN npm run deploy
