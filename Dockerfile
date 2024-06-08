@@ -18,7 +18,7 @@ RUN npm run deploy
 
 # Download dan setup Lavalink
 WORKDIR /opt
-RUN wget https://github.com/Frederikam/Lavalink/releases/download/3.4/Lavalink.jar
+RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/4.0.6/Lavalink.jar
 
 # Set environment variable untuk Lavalink
 ENV JAVA_TOOL_OPTIONS -Xmx1G
