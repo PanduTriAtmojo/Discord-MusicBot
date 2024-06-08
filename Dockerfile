@@ -14,7 +14,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Copy file konfigurasi ke dalam container (pastikan jalur file ini sesuai)
-COPY config.json ./config.json
+COPY config.js ./config.js
 
 # Install dependencies aplikasi Node.js
 RUN npm install
