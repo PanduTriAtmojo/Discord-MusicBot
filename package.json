@@ -61,10 +61,10 @@
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
     "node-fetch": "2.6.7",
-    "os": "^0.1.2",
+
     "passport": "^0.6.0",
     "passport-discord": "^0.1.4",
-    "pm2": "^5.4.0",
+
     "pretty-ms": "^7.0.1",
     "rlyrics": "^2.0.1",
     "systeminformation": "^5.9.12",
