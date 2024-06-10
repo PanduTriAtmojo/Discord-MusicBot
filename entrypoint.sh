@@ -7,4 +7,4 @@ java -jar Lavalink.jar &
 sleep 20
 
 # Start Node.js application
-pm2 start index.js
+pm2 start index.js --watch
