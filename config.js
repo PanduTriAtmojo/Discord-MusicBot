@@ -26,7 +26,7 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "unfair-dix-aras-5ef48fc3.koyeb.app", //- The host name or IP of the lavalink server.
+			host: "localhost", //- The host name or IP of the lavalink server.
 			port: 2333, // The port that lavalink is listening to. This must be a number!
 			password: "youshallnotpass", //- The password of the lavalink server.
 			retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
