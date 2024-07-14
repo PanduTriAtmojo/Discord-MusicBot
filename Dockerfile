@@ -17,7 +17,7 @@ COPY . .
 RUN npm install && npm i -g pm2
 
 # Jalankan build aplikasi (jika ada)
-RUN npm run deploy
+# RUN npm run deploy
 
 # Download dan setup Lavalink (dikomentari jika tidak diperlukan)
 # RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.7.12/Lavalink.jar
@@ -25,11 +25,11 @@ RUN npm run deploy
 # Set environment variable untuk Lavalink (dikomentari jika tidak diperlukan)
 # ENV JAVA_TOOL_OPTIONS -Xmx1G
 
-# Copy entrypoint script dan set izin eksekusi
-# COPY entrypoint.sh /usr/src/app/entrypoint.sh
-# RUN chmod +x /usr/src/app/entrypoint.sh
+Copy entrypoint script dan set izin eksekusi
+COPY entrypoint.sh ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 # Set entrypoint
-# ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
 
-CMD ["node", "index.js"]
+# CMD ["node", "index.js"]
