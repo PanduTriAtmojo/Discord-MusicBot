@@ -13,26 +13,23 @@ WORKDIR /usr/src/app
 # Copy aplikasi Node.js ke dalam container
 COPY . .
 
-# Copy file konfigurasi ke dalam container (pastikan jalur file ini sesuai)
-COPY config.js ./config.js
-
 # Install dependencies aplikasi Node.js
 RUN npm install && npm i -g pm2
 
 # Jalankan build aplikasi (jika ada)
 RUN npm run deploy
 
-# Download dan setup Lavalink
+# Download dan setup Lavalink (dikomentari jika tidak diperlukan)
 # RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.7.12/Lavalink.jar
 
-# Set environment variable untuk Lavalink
+# Set environment variable untuk Lavalink (dikomentari jika tidak diperlukan)
 # ENV JAVA_TOOL_OPTIONS -Xmx1G
 
-# Copy entrypoint script
+# Copy entrypoint script dan set izin eksekusi
 COPY entrypoint.sh /usr/src/app/entrypoint.sh
 RUN chmod +x /usr/src/app/entrypoint.sh
 
 # Set entrypoint
-ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+# ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
 
-# CMD ["node", "index.js"]
+CMD ["node", "index.js"]
