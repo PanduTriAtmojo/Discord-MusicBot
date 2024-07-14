@@ -25,7 +25,7 @@ RUN npm install && npm i -g pm2
 # Set environment variable untuk Lavalink (dikomentari jika tidak diperlukan)
 # ENV JAVA_TOOL_OPTIONS -Xmx1G
 
-Copy entrypoint script dan set izin eksekusi
+# Copy entrypoint script dan set izin eksekusi
 COPY entrypoint.sh ./entrypoint.sh
 RUN chmod +x ./entrypoint.sh
 
