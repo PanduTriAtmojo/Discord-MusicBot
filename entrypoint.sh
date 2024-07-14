@@ -7,5 +7,4 @@
 # sleep 20
 
 # Start Node.js application
-# pm2-runtime index.js
-node index.js
+pm2-runtime index.js
