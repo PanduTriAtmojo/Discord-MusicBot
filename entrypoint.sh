@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Start Lavalink in the background
-java -jar Lavalink.jar &
+# java -jar Lavalink.jar &
 
 # Wait for Lavalink to start
-sleep 20
+# sleep 20
 
 # Start Node.js application
-pm2-runtime index.js
+# pm2-runtime index.js
