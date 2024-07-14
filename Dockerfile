@@ -3,7 +3,7 @@ FROM node:18-bullseye
 
 # Install dependencies untuk Lavalink dan tools untuk memeriksa port
 RUN apt-get update && \
-    apt-get install -y openjdk-17-jdk wget net-tools && \
+    apt-get install -y wget net-tools && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -23,10 +23,10 @@ RUN npm install && npm i -g pm2
 RUN npm run deploy
 
 # Download dan setup Lavalink
-RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.7.12/Lavalink.jar
+# RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.7.12/Lavalink.jar
 
 # Set environment variable untuk Lavalink
-ENV JAVA_TOOL_OPTIONS -Xmx1G
+# ENV JAVA_TOOL_OPTIONS -Xmx1G
 
 # Copy entrypoint script
 COPY entrypoint.sh /usr/src/app/entrypoint.sh
