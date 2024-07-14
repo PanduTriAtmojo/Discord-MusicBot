@@ -1,5 +1,5 @@
 # Menggunakan base image node dan bullseye
-FROM node:18-bullseye
+FROM node:lts-buster
 
 # Install dependencies untuk Lavalink dan tools untuk memeriksa port
 RUN apt-get update && \
