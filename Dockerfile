@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Set working directory
-WORKDIR /usr/src/app
+# WORKDIR /usr/src/app
 
 # Copy aplikasi Node.js ke dalam container
 COPY . .
@@ -26,8 +26,8 @@ RUN npm run deploy
 # ENV JAVA_TOOL_OPTIONS -Xmx1G
 
 # Copy entrypoint script dan set izin eksekusi
-COPY entrypoint.sh /usr/src/app/entrypoint.sh
-RUN chmod +x /usr/src/app/entrypoint.sh
+# COPY entrypoint.sh /usr/src/app/entrypoint.sh
+# RUN chmod +x /usr/src/app/entrypoint.sh
 
 # Set entrypoint
 # ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
