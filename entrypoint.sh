@@ -8,3 +8,4 @@
 
 # Start Node.js application
 # pm2-runtime index.js
+node index.js
